@@ -25,7 +25,8 @@ public class Cliente {
         } catch (ConnectException ex) {
            JOptionPane.showMessageDialog(new JOptionPane(), "------- Servidor não iniciado --- Conexão não feita. --------" + ex.getMessage());
         } catch (IOException ex) {
-            JOptionPane.showMessageDialog(new JOptionPane(), "------- Erro na hora de se conectar. --------" + ex.getMessage());
+            JOptionPane.showMessageDialog(new JOptionPane(), "------- Erro na hora de se conectar ao host. --------" + ex.getMessage());
+            System.exit(0);
         } 
        
     }
